@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathaniel Chimaliro | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Nathaniel.jpg" alt="Nathaniel">
+      <span>Nathaniel</span>
+    </div>
+    <div class="nav-right">
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="Dofoto.jpg" alt="Nathaniel Chimaliro" class="profile-pic">
+      <h1>Hi, I'm <span>Nathaniel</span></h1>
+      <p>A self-taught frontend Web Developer from Thyolo district, Malawi. I build fast, modern, user-friendly and responsive websites for companies and small organizations using several programming and scripting languages such as HTML, CSS, PHP and JavaScript.</p>
+      <a href="#projects" class="btn">View My Work <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-percent="98">
+        <div class="skill-header">
+          <i class="fab fa-html5"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-bar"><div class="skill-progress"></div></div>
+        <div class="skill-percent">0%</div>
+      </div>
+      <div class="skill-card" data-percent="93">
+        <div class="skill-header">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-bar"><div class="skill-progress"></div></div>
+        <div class="skill-percent">0%</div>
+      </div>
+      <div class="skill-card" data-percent="90">
+        <div class="skill-header">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-bar"><div class="skill-progress"></div></div>
+        <div class="skill-percent">0%</div>
+      </div>
+      <div class="skill-card" data-percent="91">
+        <div class="skill-header">
+          <i class="fab fa-php"></i>
+          <h3>PHP</h3>
+        </div>
+        <div class="skill-bar"><div class="skill-progress"></div></div>
+        <div class="skill-percent">0%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="restaurant.png" alt="Restaurant Website">
+        <div class="project-content">
+          <h3><i class="fas fa-cut"></i> Restaurant Website</h3>
+          <p>Responsive modern booking site with WhatsApp integration for local restaurants in Blantyre and surrounding areas.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">PHP</span><span class="tag">React</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="age.png" alt="Age Validater App">
+        <div class="project-content">
+          <h3><i class="fas fa-user-check"></i> Age Validater App</h3>
+          <p>Validates user age before showing content. Built with HTML, CSS, vanilla JS + Python.</p>
+          <div class="tags">
+            <span class="tag">JS</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PHP</span><span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="business.png" alt="Business Website">
+        <div class="project-content">
+          <h3><i class="fas fa-briefcase"></i> Business Landing Page</h3>
+          <p>Fast, SEO-optimized landing page for small businesses. 98% PageSpeed score.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PHP</span><span class="tag">JS</span><span class="tag">React</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Work Together</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="3" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2026 Nathaniel Chimaliro.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
